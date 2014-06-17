@@ -12,7 +12,7 @@ Test suite for the H5BP [Server Configs](https://github.com/h5bp/server-configs)
 ## Usage
 
 To test for `localhost`, where `localhost` points at the contents of the
-`fixtures/content` folder:
+`fixtures/` folder:
 
 ```bash
 $ npm test
