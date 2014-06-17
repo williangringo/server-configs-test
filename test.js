@@ -4,7 +4,7 @@ var url    = require('url');
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-var baseUrl = url.parse(process.env.TEST_BASE_URL || 'http://localhost/') || {};
+var baseUrl = url.parse(process.env.npm_package_config_url);
 
 baseUrl.host = baseUrl.hostname || 'localhost';
 baseUrl.path = (baseUrl.path).replace(/\/+$/, '');
