@@ -1,5 +1,7 @@
 ## Test suite for the H5BP server configs
 
+[![devDependency Status](https://david-dm.org/h5bp/server-configs-tests/dev-status.svg)](https://david-dm.org/h5bp/server-configs-tests#info=devDependencies)
+
 A test script for testing H5BP server configs
 
 ## Setup
