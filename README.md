@@ -11,7 +11,7 @@ A test script for testing h5bp server configs
 
 To test on localhost, where localhost points at the contents of the fixtures/content folder:
 
-    mocha
+    $ mocha
 
 To test anywhere else upload the files:
 
