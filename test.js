@@ -1,7 +1,14 @@
 var assert = require('assert');
 var http   = require('http');
+var url    = require('url');
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+var baseUrl = url.parse(process.env.TEST_BASE_URL || 'http://localhost/') || {};
+
+baseUrl.host = baseUrl.hostname || 'localhost';
+baseUrl.path = (baseUrl.path).replace(/\/+$/, '');
+baseUrl.port = baseUrl.port || (baseUrl.protocol === 'https:' ? 443 : 80);
 
 var tests = [
 
@@ -871,15 +878,15 @@ function makeGETRequest(file, requestHeaders, callback) {
 
         // Domain name or IP address of the server to issue the request to
         // (defaults to 'localhost')
-        //host: 'localhost',
+        host: baseUrl.host,
 
         // Request path
         // (defaults to '/')
-        path: '/' + file,
+        path: baseUrl.path + '/' + file,
 
         // Port of remote server
         // (defaults to 80)
-        //port: 80
+        port: baseUrl.port
 
     };
 
