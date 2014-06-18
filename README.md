@@ -21,7 +21,7 @@ $ npm test
 To test anywhere else upload the files:
 
 ```bash
-$ rsync -rv fixtures someserver:/var/www/example.com/public/
+$ rsync -rv src/fixtures someserver:/var/www/example.com/public/
 ```
 
 then, tell `npm` where the files are and run the tests:
@@ -33,5 +33,5 @@ $ npm config set h5bp:url <URL> && npm run <TEST_NAME>
 e.g.:
 
 ```bash
-$ npm config set h5bp:url "http://192.168.2.100/content" && npm run test
+$ npm config set h5bp:url "http://example.com/fixtures" && npm run test
 ```
