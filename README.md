@@ -1,6 +1,7 @@
 ## [WIP] Test suite for the H5BP Server Configs
 
-[![devDependency Status](https://david-dm.org/h5bp/server-configs-tests/dev-status.svg)](https://david-dm.org/h5bp/server-configs-tests#info=devDependencies)
+[![Build Status](https://travis-ci.org/h5bp/server-configs-test.svg)](https://travis-ci.org/h5bp/server-configs-test)
+[![devDependency Status](https://david-dm.org/h5bp/server-configs-test/dev-status.svg)](https://david-dm.org/h5bp/server-configs-test#info=devDependencies)
 
 Test suite for the H5BP [Server Configs](https://github.com/h5bp/server-configs).
 
