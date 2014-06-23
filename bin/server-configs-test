@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+
+var Mocha = require("mocha");
+var path = require('path');
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+function main() {
+
+    // Mocha options
+    // http://visionmedia.github.io/mocha/#usage
+    var mocha = new Mocha({
+
+        // Interface that will be used (default is "bdd")
+        //ui: "bdd",
+
+        // Reporter that will be used (default is "dot")
+        reporter: "spec",
+
+        // Test-case timeout (default is 2s)
+        timeout: "5s",
+
+        // Test threshold above which Mocha will highlight
+        // the test as taking to long (default 75ms)
+        slow: "1s"
+
+    });
+
+    // Run test suite
+    mocha.addFile(path.resolve(__dirname, '../src/test_suite.js'));
+    mocha.run(function(failures){
+        process.exit(failures);
+    });
+}
+
+main();

@@ -1,9 +1,28 @@
 {
-  "private": true,
-  "devDependencies": {
+  "bin": {
+    "server-configs-test": "bin/server-configs-test"
+  },
+  "bugs": {
+    "url": "https://github.com/h5bp/server-configs-test/issues"
+  },
+  "dependencies": {
     "mocha": "^1.20.0"
   },
-  "scripts": {
-    "test": "echo 'WIP'"
-  }
+  "homepage": "https://github.com/h5bp/server-configs-tests",
+  "files": [
+    "LICENSE.md",
+    "bin/",
+    "src/"
+  ],
+  "license": {
+      "type": "MIT",
+       "url": "https://github.com/h5bp/server-configs-test/blob/master/LICENSE.md"
+  },
+  "name": "server-configs-test",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/h5bp/server-configs-test.git"
+  },
+  "version": "0.1.0"
 }
