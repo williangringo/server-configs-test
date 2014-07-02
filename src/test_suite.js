@@ -188,7 +188,7 @@ function run(tests) {
                 describe(file, function () {
 
                     var values = test.files[file];
-                    var expectedResponseBody = values.body;
+                    var expectedResponseBody = values.responseBody;
                     var expectedResponseHeaders = values.responseHeaders;
                     var expectedStatusCode = values.statusCode || 200;
                     var response;
