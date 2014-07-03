@@ -465,6 +465,14 @@ exports = module.exports = {
                     }
                 },
 
+                'test.woff2': {
+                    responseHeaders: {
+                        'access-control-allow-origin': '*',
+                        'content-encoding': null,
+                        'content-type': 'application/font-woff2'
+                    }
+                },
+
                 'test.xml': {
                     responseHeaders: {
                         'cache-control': 'max-age=0, no-transform',
