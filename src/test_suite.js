@@ -191,7 +191,7 @@ function run(tests) {
                     var expectedResponseBody = values.responseBody;
                     var expectedResponseHeaders = values.responseHeaders;
                     var expectedStatusCode = values.statusCode || 200;
-                    var response;
+                    var response = {}; // {} in case the server is not accessible
 
                     // Make GET request and test the HTTP response status code
                     it(getStatusCodeTestDescription(file, expectedStatusCode), function (done) {

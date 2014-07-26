@@ -399,6 +399,13 @@ exports = module.exports = {
                     }
                 },
 
+                'test.topojson': {
+                    responseHeaders: {
+                        'cache-control': 'max-age=0, no-transform',
+                        'content-type': 'application/json; charset=utf-8'
+                    }
+                },
+
                 'test.ttc': {
                     responseHeaders: {
                         'access-control-allow-origin': '*',
